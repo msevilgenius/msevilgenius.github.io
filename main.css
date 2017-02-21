@@ -4,11 +4,51 @@
     font-size: 20px;
 }
 
+.heading-initial{
+    display: none;
+}
+
+nav {
+    height: 100%;
+    width: 3rem;
+    float: right;
+    vertical-align: top;
+    background-color: red;
+}
+
+.hidden .nav-list{
+    display: none;
+}
+
+@media(min-width: 400px) {
+
+    nav.hidden .nav-list{
+        display: block;
+    }
+    header nav{
+        float: none;
+        width: auto;
+    }
+}
+
 @media(max-width: 600px) {
     *{
         margin: 0;
         padding: 0;
         font-size: 15px;
+    }
+
+    .heading-initial{
+        display: inline;
+    }
+
+    .heading-surname{
+        display: none;
+    }
+
+
+    .nav-item {
+        min-width: 3rem;
     }
 }
 
@@ -34,6 +74,10 @@
     background-color: #8A07D2;
     font-family: montserrat, arial, sans-serif;
     text-shadow: 0 0 4px #65049B;
+}
+
+.header-heading span{
+    font-size: 2rem;
 }
 
 .header-heading {
@@ -67,7 +111,14 @@ header a{
 
 nav {
     height: 100%;
+    width: 3rem;
+    float: right;
     vertical-align: top;
+    background-color: red;
+}
+
+.hidden .nav-list{
+    display: none;
 }
 
 .nav-item:hover{
