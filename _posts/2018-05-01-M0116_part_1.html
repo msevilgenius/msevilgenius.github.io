@@ -1,0 +1,22 @@
+---
+layout: post
+title:  "Converting an Apple M0116 to run QMK part 1"
+date:   2018-05-01 00:00:00 +0000
+categories: keyboards
+published: false
+---
+<p>I have a few old apple keyboards</p>
+
+
+<h2>Reverese engineering the matrix</h2>
+<p>This was not so hard, though it was quite tedious, Just a matter of finding which pins on the controller each side of each switch is connected to.</p>
+
+<p>The matrix on the M0116 has 10 rows and 8 columns for 74 of the 81 switches, with the modifiers (and power key) connected to separate pins and the ground plane,
+    the two shift keys are connected in parallel</p>
+
+
+<h2>Wiring it up with a teensy</h2>
+
+<p>The easiest way to wire this up without modifying the board is to copy the wiring and connect the 8x10 matrix</p>
+
+<h2></h2>
