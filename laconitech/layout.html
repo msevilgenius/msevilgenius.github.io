@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+<!-- {%- include laconitech/head.html -%} -->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="laconitech" />
+    <meta property="og:locale" content="en_GB" />
+    <meta name="description" content="custom hardware for keyboards and other peripherals" />
+    <meta property="og:description" content="laconicos technologies" />
+    <!-- <link rel="canonical" href="" />
+    <meta property="og:url" content="" /> -->
+    <meta property="og:site_name" content="laconitech" />
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/laconitech/assets/main.css">
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header-content">
+        <h1 class="header-title"><a href="#">laconitech</a></h1>
+        <nav class="header-nav">
+          <a href="#" class="header-nav-item">About laconitech</a>
+          <a href="#" class="header-nav-item">About2</a>
+          <a href="/" class="header-nav-item">Personal Site</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="main-section">
+      <main class="content-container">
+        <h1 class="content-title">{{ page.title }}</h1>
+{{ content }}
+      </main>
+    </section>
+
+    <footer class="footer">
+      <span>&copy; {{ 'now' | date: "%Y" }} <a href="/">Michael Sledge</a></span>
+      <span class="footer-build-time">built at <time datetime="{{ site.time | date_to_xmlschema }}">{{ site.time | date_to_xmlschema }}</time></span>
+    </footer>
+
+  </body>
+
+</html>

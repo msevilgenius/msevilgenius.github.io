@@ -1,0 +1,35 @@
+h1 {
+    font-size:6rem;
+}
+
+h2 {
+    font-size:3rem;
+}
+
+body {
+    background:#2A2A2A;
+}
+
+.container {
+    margin:10%;
+}
+
+.teaser-text {
+    text-align:center;
+    color:#EAEAEF;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    animation-duration: 8s;
+    animation-name: breath;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+}
+
+@keyframes breath {
+    from {
+        text-shadow: 0 0 3rem rgba(255, 75, 180, 0.288), 1px 1px 1px black;
+    }
+
+    to {
+        text-shadow: 0 0 1rem rgba(255, 75, 180, 0.05), 1px 1px 1px black;
+    }
+  }
